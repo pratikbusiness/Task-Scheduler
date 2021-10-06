@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+body {
+  margin: 0;
+  font-family: "Exo", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --custom-red: #f8ccca;
+  --custom-green: #c1f8e5;
+  --custom-yellow: #faf3c1;
+  --block-height: 60px;
+}
+
+.yellow-color {
+  background-color: var(--custom-yellow);
+}
+.red-color {
+  background-color: var(--custom-red);
+}
+.green-color {
+  background-color: var(--custom-green);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.title-text {
+  font-size: 30px;
+  color: rgb(80, 80, 80);
+  font-weight: 600;
+}
+
+.title-text.small {
+  font-size: 18px;
+}
+
+.contain-elements {
+  padding: 10px 20px;
+  overflow: auto;
+  max-height: 80vh;
+  border: 1px solid lightgray;
+}
+
+.react-calendar {
+  border: none !important;
+}
+
+.chart-block {
+  min-height: var(--block-height);
+  margin-top: 20px;
+  position: relative;
+  border-top: 1px solid rgb(136, 136, 136);
+}
+
+.chart-block .time-indicator {
+  top: -10px;
+  padding: 0 20px;
+  position: absolute;
+  background-color: white;
+}
+
+.event-card {
+    width: 85%;
+}
+
+.event-card p {
+  margin: 15px 0;
+}
+
+.event-card-container {
+  z-index: 20;
+  position: relative;
+  min-height: var(--block-height);
+}
+
+.event-card-container:hover .absolute-card {
+  box-shadow: 0 3px 15px rgb(0 0 0 / 0.4);
+}
+
+.event-card-container .absolute-card {
+  top: -10px;
+  position: absolute;
+}
+
+.event-container {
+  cursor: pointer;
+  padding-left: 130px;
+}
+
+.triangle-left {
+  position: absolute;
+  left: -15px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.yellow-color .triangle-left {
+  border-right: 15px solid var(--custom-yellow);
+}
+
+.red-color .triangle-left {
+  border-right: 15px solid var(--custom-red);
+}
+
+.green-color .triangle-left {
+  border-right: 15px solid var(--custom-green);
+}
+
+.event-card-margin-0{
+    top: -12px !important;
+    z-index: 1;
+}
+
+.event-card-margin-25{
+    top: 32% !important;
+    z-index: 2;
+}
+
+.event-card-margin-30{
+    top: 42% !important;
+    z-index: 3;
+}
+
+.event-card-margin-45{
+    top: 62% !important;
+    z-index: 4;
+}
+
+.event-card.event-card-margin-0:hover,
+.event-card.event-card-margin-0 span:hover{
+    z-index: 400;
+}
+
+.event-card.event-card-margin-25:hover,
+.event-card.event-card-margin-25 span:hover{
+    z-index: 401;
+}
+
+.event-card.event-card-margin-30:hover,
+.event-card.event-card-margin-30 span:hover{
+    z-index: 402;
+}
+
+.event-card.event-card-margin-45:hover,
+.event-card.event-card-margin-45 span:hover{
+    z-index: 403;
+}
